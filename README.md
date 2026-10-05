@@ -12,13 +12,10 @@ The walkthrough follows **simulation → shared ROS 2 application → physical d
 
 ![TurtleBot3 in the Gazebo world](gazebo-turtlebot3-world.png)
 
-Project screenshot of the TurtleBot3 simulation environment.
 
 ### Physical — TurtleBot3 hardware demonstration
 
 ![Physical TurtleBot3 demonstration preview](docs/media/turtlebot3-physical-demo.gif)
-
-The GIF is a silent 15-second preview of the hardware recording. [Watch or download the original full MP4 (43 seconds, approximately 8 MB)](%E5%AA%92%E9%AB%941.mp4).
 
 These assets show the simulation environment and physical robot. For the scope of software checks and runtime validation, see [VALIDATION.txt](VALIDATION.txt).
 
