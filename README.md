@@ -10,14 +10,11 @@ The walkthrough follows **simulation → shared ROS 2 application → physical d
 
 ### Simulation — TurtleBot3 in Gazebo
 
-![TurtleBot3 in the Gazebo world](gazebo-turtlebot3-world.png)
-
+![TurtleBot3 in the Gazebo world](docs/media/gazebo-turtlebot3-world.png)
 
 ### Physical — TurtleBot3 hardware demonstration
 
 ![Physical TurtleBot3 demonstration preview](docs/media/turtlebot3-physical-demo.gif)
-
-These assets show the simulation environment and physical robot. For the scope of software checks and runtime validation, see [VALIDATION.txt](VALIDATION.txt).
 
 ## ROS 2 implementation skills
 
