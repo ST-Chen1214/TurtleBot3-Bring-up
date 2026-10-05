@@ -10,11 +10,11 @@ The walkthrough follows **simulation → shared ROS 2 application → physical d
 
 ### Simulation — TurtleBot3 in Gazebo
 
-![TurtleBot3 in the Gazebo world](docs/media/gazebo-turtlebot3-world.png)
+<img src="docs/media/gazebo-turtlebot3-world.png" alt="TurtleBot3 in the Gazebo world" width="1368" height="845">
 
 ### Physical — TurtleBot3 hardware demonstration
 
-![Physical TurtleBot3 demonstration preview](docs/media/turtlebot3-physical-demo.gif)
+<img src="docs/media/turtlebot3-physical-demo-1368x845.gif" alt="Physical TurtleBot3 demonstration preview" width="1368" height="845">
 
 ## ROS 2 implementation skills
 
