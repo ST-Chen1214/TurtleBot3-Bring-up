@@ -1,0 +1,28 @@
+udp_command_bridge:
+  ros__parameters:
+    bind_ip: 0.0.0.0
+    port: 5005
+    topic: /teleop/cmd_vel_raw
+    max_linear_mps: 0.22
+    max_angular_rps: 2.84
+
+tcp_reliable_command_bridge:
+  ros__parameters:
+    bind_ip: 0.0.0.0
+    port: 5006
+    command_timeout_s: 3.0
+
+zmq_telemetry_bridge:
+  ros__parameters:
+    bind: tcp://*:5555
+    snd_hwm: 10
+
+bluetooth_maintenance_bridge:
+  ros__parameters:
+    channel: 1
+
+rest_api_bridge:
+  ros__parameters:
+    host: 0.0.0.0
+    port: 8000
+    snapshot_timeout_s: 4.0

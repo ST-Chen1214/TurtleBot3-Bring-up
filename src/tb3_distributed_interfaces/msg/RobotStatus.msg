@@ -1,0 +1,17 @@
+builtin_interfaces/Time stamp
+string mode
+bool safety_blocked
+string safety_reason
+bool estop_engaged
+float32 front_distance_m
+float32 min_distance_m
+float32 battery_percent
+float32 linear_velocity_mps
+float32 angular_velocity_rps
+float32 x_m
+float32 y_m
+float32 yaw_rad
+float32 max_linear_speed_mps
+bool lidar_alive
+bool camera_alive
+bool motor_alive

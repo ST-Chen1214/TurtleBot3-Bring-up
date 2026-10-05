@@ -1,0 +1,16 @@
+Validation performed in the generation environment
+==================================================
+
+- Python syntax compiled successfully for src/, operator/, and tests/.
+- package.xml files parsed successfully as XML.
+- Pure-Python unit tests: 11 passed.
+- Operator console --help executed successfully.
+
+Not executed here:
+- colcon/ROS 2 build (ROS 2 is not installed in the generation container).
+- Physical Raspberry Pi/OpenCR/TurtleBot3 hardware test.
+- Gazebo runtime test.
+
+Run on a ROS 2 Jazzy machine:
+  ./scripts/build_workspace.sh
+  pytest -q tests

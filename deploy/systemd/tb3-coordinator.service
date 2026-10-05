@@ -1,0 +1,14 @@
+[Unit]
+Description=TurtleBot3 safety/coordinator ROS 2 node
+After=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+Environment=ROS_DOMAIN_ID=30
+ExecStart=/bin/bash -lc 'source /opt/ros/jazzy/setup.bash && source /home/ubuntu/tb3_distributed_ws/install/setup.bash && ros2 launch tb3_distributed_bringup coordinator_pi.launch.py'
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

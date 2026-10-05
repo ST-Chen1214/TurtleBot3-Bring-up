@@ -1,0 +1,24 @@
+safety_supervisor:
+  ros__parameters:
+    raw_cmd_topic: /teleop/cmd_vel_raw
+    safe_cmd_topic: /cmd_vel
+    scan_topic: /scan
+    mode_topic: /robot/mode
+    stop_distance_m: 0.35
+    front_sector_half_angle_deg: 15.0
+    command_timeout_s: 0.50
+    scan_timeout_s: 0.50
+    fail_closed_on_scan_loss: true
+    max_linear_mps: 0.22
+    max_angular_rps: 2.84
+    publish_rate_hz: 20.0
+    initial_mode: TELEOP
+
+system_coordinator:
+  ros__parameters:
+    initial_mode: TELEOP
+
+status_aggregator:
+  ros__parameters:
+    publish_rate_hz: 10.0
+    motor_timeout_s: 1.5

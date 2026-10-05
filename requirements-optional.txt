@@ -1,0 +1,4 @@
+# Only needed if the optional communication bridges are enabled.
+pyzmq>=25
+fastapi>=0.110
+uvicorn>=0.29

@@ -1,0 +1,42 @@
+tb3_distributed_ros2_project/
+├── README.md
+├── requirements-optional.txt
+├── operator/
+│   ├── operator_console.py                 # Full UDP/TCP/ZMQ/REST operator console
+│   ├── bluetooth_maintenance_client.py     # Local Linux RFCOMM client
+│   ├── teleop_client.py                    # Legacy alias to operator console
+│   ├── requirements.txt
+│   └── snapshots/
+├── src/
+│   ├── tb3_distributed_interfaces/         # Custom msg/srv package (ament_cmake)
+│   │   ├── msg/RobotStatus.msg
+│   │   └── srv/{GetSnapshot,SetFloat,SetMode}.srv
+│   ├── tb3_distributed_core/               # ROS 2 runtime nodes
+│   │   ├── config/{comm,safety,sensors}.yaml
+│   │   └── tb3_distributed_core/
+│   │       ├── safety_supervisor.py
+│   │       ├── system_coordinator.py
+│   │       ├── status_aggregator.py
+│   │       ├── sensor_health.py
+│   │       ├── snapshot_server.py
+│   │       ├── udp_bridge.py
+│   │       ├── tcp_bridge.py
+│   │       ├── zmq_bridge.py
+│   │       ├── rest_api.py
+│   │       └── bluetooth_bridge.py
+│   └── tb3_distributed_bringup/
+│       └── launch/
+│           ├── motor_pi.launch.py
+│           ├── sensor_pi.launch.py
+│           ├── coordinator_pi.launch.py
+│           ├── comm_pi.launch.py
+│           └── simulation.launch.py
+├── tests/
+│   ├── test_safety_logic.py
+│   └── test_command_protocol.py
+├── scripts/build_workspace.sh
+└── deploy/systemd/
+    ├── tb3-motor.service
+    ├── tb3-sensor.service
+    ├── tb3-coordinator.service
+    └── tb3-comm.service

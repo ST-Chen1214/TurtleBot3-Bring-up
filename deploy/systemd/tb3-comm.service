@@ -1,0 +1,14 @@
+[Unit]
+Description=TurtleBot3 external communication gateway (UDP/TCP/ZMQ/REST/Bluetooth)
+After=network-online.target bluetooth.target
+
+[Service]
+Type=simple
+User=ubuntu
+Environment=ROS_DOMAIN_ID=30
+ExecStart=/bin/bash -lc 'source /opt/ros/jazzy/setup.bash && source /home/ubuntu/tb3_distributed_ws/install/setup.bash && ros2 launch tb3_distributed_bringup comm_pi.launch.py enable_udp:=true enable_tcp:=true enable_zmq:=true enable_rest:=true enable_bluetooth:=true'
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

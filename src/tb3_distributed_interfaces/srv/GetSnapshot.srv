@@ -1,0 +1,6 @@
+uint8 jpeg_quality
+---
+bool success
+string message
+string content_type
+uint8[] data

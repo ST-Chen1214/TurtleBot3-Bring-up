@@ -1,0 +1,12 @@
+sensor_health:
+  ros__parameters:
+    scan_topic: /scan
+    image_topic: /camera/image_raw
+    timeout_s: 1.5
+    camera_expected: true
+
+snapshot_server:
+  ros__parameters:
+    image_topic: /camera/image_raw
+    default_jpeg_quality: 85
+    max_frame_age_s: 2.0
